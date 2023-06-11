@@ -1,0 +1,97 @@
+.section-destination {
+    position: relative;
+    &__img-pluses {
+        display: none;
+        width: 148px;
+        height: 165px ;
+    }
+}
+.destinations {
+    padding-top: 123px;
+    &__row-wrapper {
+        position: relative;
+        max-width: 1102px;
+        margin: 0 auto;
+    }
+    &__row {
+        max-width: 1039px;
+        margin: 0 auto;
+        display: flex;
+        gap: 41px;
+    }
+    &__decore {
+        position: absolute;
+        bottom: 47px;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.item-destinations {
+    position: relative;
+    width: fit-content;
+    border-radius: 24px;
+    filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+    &__img {
+        border-radius: 24px;
+    }
+    &__placeholder {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: #FFFFFF;
+        padding: 30px 25px;
+        border-radius: 0 0 23px 23px;
+        font-family: $poppins-font;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #5E6282;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__text {
+        &::before {
+            content: url(./images/section-destination/icon-nav.svg);
+            width: 20px;
+            height: 20px;
+            margin-right: 15px;
+        }
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 425px) {
+    .section-destination {
+        &__img-pluses {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -47px;
+            z-index: -1;
+            width: 148px;
+            height: 165px ;
+        }
+    }
+    .destinations {
+        width: 325px;
+        margin: 0 auto;
+        padding-bottom: 72px;
+        &__row {
+            flex-direction: column;
+            gap: 75px;
+        }
+        &__decore {
+            display: none;
+        }
+    }
+    .item-destinations {
+        width: 325px;
+    }
+}

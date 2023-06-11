@@ -1,0 +1,61 @@
+@import './css/fonts';
+@import './css/reset';
+@import './css/components/navbar';
+@import './css/components/hero-content';
+@import './css/components/services';
+@import './css/components/destinations';
+@import './css/components/book-and-trip';
+@import './css/components/testimonials';
+@import './css/components/logos';
+@import './css/components/subscribe';
+@import './css/components/footer';
+
+body {
+    max-width: 1440px;
+    background: #FFFFFF;
+}
+
+.title-block {
+    &__text {
+        font-family: $poppins-font;
+        font-weight: 600;
+        font-size: 18px;
+        color: #5E6282;
+        margin-bottom: 10px;
+    }
+    &__headline {
+        font-family: $volkhov-font;
+        font-weight: 700;
+        font-size: 50px;
+        text-transform: capitalize;
+        color: #14183E;
+    }
+    &_mb-l {
+        margin-bottom: 60px;
+    }
+    &_mb-s {
+        margin-bottom: 43px;
+    }
+    &_center {
+        text-align: center;
+    }
+    @media (max-width: 425px) {
+        .title-block {
+            &__text {
+                text-align: center;
+            }
+            &__headline {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.header {
+    background: url('./images/header/Decore.png') no-repeat;
+    @media (max-width: 425px) {
+        .header {
+            background: #FFFFFF;
+        }
+    }
+}

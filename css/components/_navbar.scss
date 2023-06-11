@@ -1,0 +1,98 @@
+.navbar { 
+    padding-top: 47px;
+    margin-bottom: 23px;
+    &__wrapper {
+        max-width: 1161px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+    }
+    &__list-2 {
+        display: none;
+    }
+    &__auth {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-left: 80px;
+    }
+    &__select {
+        margin-left: 40px;
+    }
+    &__list-item {
+        cursor: pointer;
+        font-family: $sans-font;
+        font-weight: 400;
+        font-size: 17px;
+        color: #212832;
+
+        &_button {
+            border-radius: 5px;
+            border: 1px solid #212832;
+            padding: 9px 21px;
+            background: transparent;
+        }
+        &_select {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+
+    &__list-item:hover {
+        color: rgb(164, 149, 168);
+        transform: scale(1.5);
+    }
+
+    &__btn-menu {
+        display: none;
+        background: transparent;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 425px)  {
+    .navbar {
+        margin-bottom: 0;
+        width: 100%;
+        padding-top: 30px;
+        background: #FFF1DA;
+        &__wrapper {
+            max-width: 325px;
+        }
+        &__list {
+            display: none;
+        }
+        &__list-2 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            padding: 93px 0;
+        }
+        &__list-item-2 {
+            font-family: $poppins-font;
+            font-weight: 400;
+            font-size: 30px;
+            letter-spacing: 0.2px;
+            color: #737373;
+        }
+        &__auth {
+            display: none;
+        }
+        &__btn-menu {
+            display: flex;
+        }
+    }
+}
