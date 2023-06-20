@@ -1,35 +1,41 @@
 .section-footer {
-    padding: 96px 192px 74px 177px ;
+    padding: 96px 192px 74px 177px;
 }
 
 .footer {
     display: flex;
     flex-direction: column;
+
     &__info {
         display: flex;
         margin-bottom: 85px;
     }
+
     &__company {
         flex: 0 0 25%;
         padding-right: 37px;
         font-family: $poppins-font;
         font-weight: 500;
-        line-height: 16px;    
+        line-height: 16px;
     }
+
     &__row {
         flex: 0 0 50%;
         display: flex;
     }
+
     &__col {
         flex: 0 0 33.33%;
         display: flex;
         justify-content: center;
     }
+
     &__links {
         flex: 0 0 25%;
         display: flex;
         justify-content: center;
     }
+
     &__rigths {
         display: flex;
         justify-content: center;
@@ -44,11 +50,12 @@
 
 .item-company {
     &__title {
-        font-size: 44px;        
+        font-size: 44px;
         line-height: 66px;
         color: #181E4B;
         margin-bottom: 30px;
     }
+
     &__text {
         font-size: 13px;
         line-height: 16px;
@@ -59,7 +66,8 @@
 .item-footer {
     display: flex;
     flex-direction: column;
-    padding-top: 25px;
+    padding-top: 5px;
+
     &__header {
         margin-bottom: 35px;
         font-family: $poppins-font;
@@ -68,11 +76,13 @@
         line-height: 26px;
         color: #080809;
     }
+
     &__list {
         display: flex;
         flex-direction: column;
         gap: 15px;
     }
+
     &__item {
         cursor: pointer;
         font-family: $poppins-font;
@@ -113,7 +123,7 @@
         color: #5E6282;
     }
 
-    &__app  {
+    &__app {
         display: flex;
         gap: 10px;
     }
@@ -124,21 +134,26 @@
         background: #FFF1DA;
         padding: 13px 0 27px 0;
     }
+
     .footer {
         &__info {
             flex-direction: column;
             margin-bottom: 60px;
         }
+
         &__row {
             flex-direction: column;
         }
+
         &__col {
             padding-left: 78px;
             justify-content: flex-start;
         }
+
         &__links {
             padding-top: 60px;
         }
+
         &__company {
             padding-left: 78px;
         }

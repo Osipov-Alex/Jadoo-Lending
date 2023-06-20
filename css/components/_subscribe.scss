@@ -2,13 +2,14 @@
     margin-top: 111px;
     background: url(./images/section-subscribe/Pluses.svg) no-repeat bottom right;
     padding: 13px 99px 69px 87px;
-    
+
 }
 
 .subscribe-wrapper {
     position: relative;
     max-width: 1170px;
     margin: 0 auto;
+
     &__send-img {
         position: absolute;
         right: -20px;
@@ -18,15 +19,17 @@
 
 .subscribe {
     padding: 89px 149px 70px 149px;
-    background-color: #DFD7F9;
+    background-color: rgba(223, 215, 249, .4);;
     border-radius: 129px 20px 20px 20px;
-    background-image: url('./images/section-subscribe/Mask2.png');
+    background-image: url('./images/section-subscribe/Mask2.png'), url('../../images/section-subscribe/Mask1.png');
     background-repeat: no-repeat;
     background-position: top right, bottom left;
+
     &__box {
         display: flex;
         flex-direction: column;
     }
+
     &__text {
         font-family: $poppins-font;
         font-weight: 600;
@@ -36,10 +39,12 @@
         color: #5E6282;
         margin-bottom: 75px;
     }
+
     &__form {
         display: flex;
         justify-content: center;
     }
+
     &__form-input {
         height: 68px;
         width: 421px;
@@ -52,6 +57,7 @@
         line-height: 17px;
         color: #39425D;
     }
+
     &__form-button {
         height: 68px;
         width: 180px;
@@ -73,25 +79,30 @@
         padding-bottom: 58px;
         background: #FFFFFF;
     }
+
     .subscribe-wrapper {
         padding: 0;
+
         &__send-img {
             position: absolute;
             right: -75px;
             top: 0;
         }
     }
+
     .subscribe {
         border-radius: 0;
         padding: 0;
         background: #FFFFFF;
+
         &__box {
-            // background: url('./images/section-subscribe/icons/Send1.svg') no-repeat right;
             margin: 0 auto;
         }
+
         &__text {
             display: none;
         }
+
         &__form-input {
             display: none;
         }

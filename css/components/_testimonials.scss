@@ -7,9 +7,11 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+
     &__left {
         flex: 0 0 50%;
     }
+
     &__rigth {
         flex: 0 0 50%;
         padding: 37px 0 0 33px;
@@ -18,26 +20,29 @@
 }
 
 .item-testimonials {
-    padding: 35px 83px 24px 30px ;
+    padding: 28px 68px 24px 34px;
     font-family: $poppins-font;
     font-size: 16px;
     font-weight: 500;
     line-height: 32px;
     color: #5E6282;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
         0px 65px 47px rgba(0, 0, 0, 0.0151852),
         0px 39px 26px rgba(0, 0, 0, 0.0121481),
         0px 20px 13px rgba(0, 0, 0, 0.01),
         0px 8px 7px rgba(0, 0, 0, 0.00785185),
         0px 2px 3px rgba(0, 0, 0, 0.00481481);
     border-radius: 10px;
+
     &__avatar {
         display: none;
     }
+
     &__text {
         margin: 0 0 40px 0;
     }
-    &__name {        
+
+    &__name {
         font-weight: 600;
     }
 }
@@ -46,6 +51,7 @@
     .section-testimonials {
         padding-top: 65px;
     }
+
     .testimonials-wrapper {
         width: 325px;
         flex-direction: column;
@@ -55,16 +61,19 @@
             background: #FFFFFF;
         }
     }
+
     .item-testimonials {
         margin-top: 20px;
         padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         &__avatar {
             display: block;
         }
     }
+
     .header-one {
         text-align: center;
     }

@@ -195,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 .content__text {
+  max-width: 477px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -440,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 24px;
-  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
 }
 .item-destinations__img {
   border-radius: 24px;
@@ -533,9 +534,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .list-item {
   display: flex;
+  max-width: 400px;
+  align-items: center;
 }
 .list-item__icon {
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   margin-right: 20px;
 }
@@ -584,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
 .rb-additional-content {
   position: absolute;
   right: 0;
-  bottom: 73px;
+  bottom: 118px;
   border-radius: 16px;
   max-width: 263px;
   padding: 22px 17px;
@@ -686,6 +689,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
 }
+.rb-content__list-item_divide {
+  margin: 0 7px;
+}
 .rb-content__list-item-icon {
   width: 36px;
   height: 36px;
@@ -769,7 +775,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-testimonials {
-  padding: 35px 83px 24px 30px;
+  padding: 28px 68px 24px 34px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -886,9 +892,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .subscribe {
   padding: 89px 149px 70px 149px;
-  background-color: #DFD7F9;
+  background-color: rgba(223, 215, 249, 0.4);
   border-radius: 129px 20px 20px 20px;
-  background-image: url("./images/section-subscribe/Mask2.png");
+  background-image: url("./images/section-subscribe/Mask2.png"), url("../../images/section-subscribe/Mask1.png");
   background-repeat: no-repeat;
   background-position: top right, bottom left;
 }
@@ -1021,7 +1027,7 @@ h1, h2, h3, h4, h5, h6 {
 .item-footer {
   display: flex;
   flex-direction: column;
-  padding-top: 25px;
+  padding-top: 5px;
 }
 .item-footer__header {
   margin-bottom: 35px;
